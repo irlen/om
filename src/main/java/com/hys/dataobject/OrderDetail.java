@@ -17,7 +17,7 @@ public class OrderDetail {
     private String productId;
     private String productName;
     private BigDecimal productPrice;
-    private Integer productQuantiry;
+    private Integer productQuantity;
     private String productIcon;
 
 }
