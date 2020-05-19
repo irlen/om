@@ -32,14 +32,14 @@ class OrderMasterImplTest {
     @Test
     void save() {
         OrderMaster orderMaster = new OrderMaster();
-        orderMaster.setBuyerAddress("东方村");
-        orderMaster.setBuyerName("二狗");
+        orderMaster.setBuyerAddress("深圳");
+        orderMaster.setBuyerName("二牛");
         orderMaster.setBuyerOpenid("irlen");
         orderMaster.setBuyerPhone("181799930003");
-        orderMaster.setOrderAmount(new BigDecimal(456.22));
-        orderMaster.setOrderId("111");
-        orderMaster.setOrderStatus(2);
-        orderMaster.setPayStatus(1);
+        orderMaster.setOrderAmount(new BigDecimal(445.22));
+        orderMaster.setOrderId("222");
+        orderMaster.setOrderStatus(4);
+        orderMaster.setPayStatus(6);
         OrderMaster result = orderMasterService.save(orderMaster);
         System.out.println(result);
     }

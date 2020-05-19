@@ -1,17 +1,11 @@
-package com.hys.dataobject;
+package com.hys.dataDTO;
 
 import lombok.Data;
-import org.hibernate.annotations.DynamicUpdate;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 import java.math.BigDecimal;
-
-@Entity
-@DynamicUpdate
 @Data
-public class OrderMaster {
-    @Id
+public class TableyForOrderMaster {
+    private String key;
     private String orderId;
     private String buyerName;
     private String buyerPhone;
@@ -20,5 +14,4 @@ public class OrderMaster {
     private BigDecimal orderAmount;
     private Integer orderStatus;
     private Integer payStatus;
-
 }
